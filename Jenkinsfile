@@ -21,7 +21,6 @@ pipeline{
                 echo "Deploy stage started ........."
                 sh "pm2 start --name 'server' bin/www"
                 echo "pm2 process started ........."
-                sh "pm2 logs 0"
             }
         }
     }
